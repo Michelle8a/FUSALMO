@@ -1,0 +1,75 @@
+1. TIPOS DE DATOS
+- int: entero (10)
+- float: decimal (3.14)
+- str: texto ("Hola")
+- bool: booleano (True/False)
+- None: valor nulo
+
+2. VARIABLES
+x = 5
+nombre = "Ana"
+pi = 3.1416
+
+3. OPERADORES
+Aritméticos: +, -, *, /, //, %, **
+Comparación: ==, !=, >, <, >=, <=
+Lógicos: and, or, not
+Asignación: =, +=, -=, *=, /=
+
+4. ESTRUCTURAS DE DATOS
+Listas:
+lista = [1, 2, 3]
+lista.append(4)
+lista[0], lista[-1]
+len(lista), lista.sort(), lista.reverse()
+
+Tuplas:
+tupla = (1, 2, 3)
+tupla[0]
+
+Diccionarios:
+persona = {"nombre": "Ana", "edad": 30}
+persona["nombre"]
+persona.keys(), persona.values()
+
+Conjuntos:
+conjunto = {1, 2, 3}
+conjunto.add(4)
+
+5. ESTRUCTURAS DE CONTROL
+Condicionales:
+if x > 0:
+    print("Positivo")
+elif x == 0:
+    print("Cero")
+else:
+    print("Negativo")
+
+Bucles:
+for i in range(5):
+    print(i)
+
+while x > 0:
+    x -= 1
+
+6. FUNCIONES
+def saludar(nombre):
+    return f"Hola, {nombre}"
+
+7. ENTRADA/SALIDA
+nombre = input("Tu nombre: ")
+print("Hola", nombre)
+
+8. CONVERSIÓN DE TIPOS
+int("10"), float("3.14"), str(25), bool(0)
+
+9. MÉTODOS ÚTILES
+Cadenas: .upper(), .lower(), .replace(), .split(), .strip()
+Listas: .append(), .remove(), .pop(), .insert(), .sort(), .reverse()
+
+10. IMPORTAR MÓDULOS
+import math
+math.sqrt(16)
+
+from random import randint
+randint(1, 10)

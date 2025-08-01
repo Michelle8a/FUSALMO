@@ -1,0 +1,83 @@
+----VARIABLES----
+x = 10                 # Entero
+y = 3.14               # Flotante
+nombre = "Hola"        # Cadena de texto
+activo = True          # Booleano
+
+
+----OPERADORES----
++   Suma
+-   Resta
+*   Multiplicación
+/   División
+//  División entera
+%   Módulo (residuo)
+**  Potencia
+
+
+----FUNCIONES BASICAS----
+print("Hola")            # Imprimir en pantalla
+input("Ingresa algo: ")  # Entrada por consola
+len("Hola")              # Largo de una cadena
+type(x)                  # Tipo de dato
+str(), int(), float(), bool()  # Conversión de tipos
+
+
+----ESTRUCTURAS DE DATOS----
+LISTAS:
+lista = [1, 2, 3]
+lista.append(4)       # Agregar elemento
+lista[0]              # Acceder al primer elemento
+lista.pop()           # Eliminar último
+
+
+TUPLAS:
+tupla = (1, 2, 3)
+tupla[0]               # Acceso (inmutables)
+
+
+DICCIONARIOS
+dic = {"nombre": "Ana", "edad": 25}
+dic["nombre"]          # Acceder a valor
+dic["edad"] = 30       # Modificar valor
+
+
+----ESTRUCTURAS DE CONTROL----
+CONDICIONALES:
+if x > 5:
+    print("Mayor a 5")
+elif x == 5:
+    print("Es 5")
+else:
+    print("Menor a 5")
+
+BUCLES:
+# Bucle for
+for i in range(5):
+    print(i)
+
+# Bucle while
+while x < 10:
+    x += 1
+
+
+----FUNCIONES----
+def saludar(nombre):
+    return f"Hola, {nombre}"
+
+saludo = saludar("Ana")
+print(saludo)
+
+
+----IMPORTAR MODULOS----
+import math
+math.sqrt(16)          # Raíz cuadrada
+
+
+----ERRORES Y EXCEPCIONES----
+try:
+    x = 10 / 0
+except ZeroDivisionError:
+    print("No se puede dividir por cero.")
+finally:
+    print("Esto siempre se ejecuta.")

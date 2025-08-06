@@ -81,3 +81,30 @@ except ZeroDivisionError:
     print("No se puede dividir por cero.")
 finally:
     print("Esto siempre se ejecuta.")
+
+
+
+-----STRINGS-----
+
+TRANSFORMACIÓN DE TEXTO
+lower()          Convierte todo el texto a minúsculas.
+upper()          Convierte todo el texto a mayúsculas.
+capitalize()     Pone la primera letra en mayúscula y el resto en minúscula.
+title()          Pone la primera letra de cada palabra en mayúscula.
+strip()          Elimina espacios al principio y al final.
+replace()        Reemplaza partes del texto por otro valor.
+
+BÚSQUEDA Y POSICIÓN
+find()           Devuelve la posición de un texto dentro de otro (o -1 si no está).
+startswith()     Verifica si el texto comienza con cierto valor.
+endswith()       Verifica si el texto termina con cierto valor.
+
+DIVISIÓN Y UNIÓN
+split()          Divide el texto en partes, usando un separador.
+join()           Une varios textos con un separador.
+
+VERIFICACIÓN DE CONTENIDO
+isdigit()        Verifica si el texto contiene solo números.
+isalpha()        Verifica si el texto contiene solo letras.
+islower()        Verifica si todas las letras están en minúsculas.
+isupper()        Verifica si todas las letras están en mayúsculas.

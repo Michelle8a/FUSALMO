@@ -1,0 +1,90 @@
+-----LISTAS-----
+
+MODIFICACIÓN DE ELEMENTOS
+append()         Agrega un elemento al final de la lista.
+insert()         Inserta un elemento en una posición específica.
+extend()         Agrega todos los elementos de otro iterable (como otra lista).
+remove()         Elimina el primer elemento con el valor indicado.
+pop()            Elimina y devuelve un elemento en una posición (por defecto, el último).
+clear()          Elimina todos los elementos de la lista.
+
+ORDEN Y COPIAS
+sort()           Ordena la lista (modifica la original).
+reverse()        Invierte el orden de los elementos en la lista.
+copy()           Devuelve una copia superficial de la lista.
+
+CONSULTA DE ELEMENTOS
+count()          Devuelve cuántas veces aparece un valor en la lista.
+index()          Devuelve la posición de la primera aparición de un valor.
+
+FUNCIONES ÚTILES CON LISTAS (no métodos, pero muy usados)
+len()            Devuelve la cantidad de elementos.
+sum()            Devuelve la suma de los elementos (si son numéricos).
+max()            Devuelve el valor máximo.
+min()            Devuelve el valor mínimo.
+sorted()         Devuelve una nueva lista ordenada (sin modificar la original).
+list()           Convierte un iterable (como string o tupla) en lista.
+
+
+
+-----DICCIONARIOS-----
+
+MODIFICACIÓN DEL DICCIONARIO
+update()         Agrega o actualiza pares clave-valor desde otro diccionario o iterable.
+setdefault()     Devuelve el valor de una clave. Si no existe, la agrega con un valor por defecto.
+pop()            Elimina una clave y devuelve su valor.
+popitem()        Elimina y devuelve el último par agregado.
+clear()          Elimina todos los elementos del diccionario.
+
+CONSULTA DE DATOS
+get()            Devuelve el valor de una clave. Si no existe, devuelve None (o el valor por defecto que indiques).
+keys()           Devuelve una vista con todas las claves.
+values()         Devuelve una vista con todos los valores.
+items()          Devuelve una vista con todos los pares (clave, valor).
+copy()           Crea una copia del diccionario.
+
+CREACIÓN
+fromkeys()       Crea un nuevo diccionario con claves dadas y un mismo valor para todas.
+
+
+
+-----SETS-----
+
+MODIFICACIÓN DEL CONJUNTO
+add()            Agrega un elemento al set.
+remove()         Elimina un elemento. Da error si no existe.
+discard()        Elimina un elemento. No da error si no existe.
+pop()            Elimina y devuelve un elemento aleatorio del set.
+clear()          Elimina todos los elementos del set.
+update()         Agrega elementos de otro iterable (como otro set o lista).
+
+OPERACIONES ENTRE SETS
+union()          Devuelve un nuevo set con todos los elementos (sin duplicados).
+intersection()   Devuelve un nuevo set con los elementos comunes.
+difference()     Devuelve un nuevo set con los elementos que están en el primero pero no en el segundo.
+symmetric_difference()  Devuelve un nuevo set con los elementos que están en un set u otro, pero no en ambos.
+
+VERIFICACIONES ENTRE SETS
+issubset()       Verifica si el set actual está contenido en otro.
+issuperset()     Verifica si el set actual contiene a otro.
+isdisjoint()     Verifica si dos sets no tienen elementos en común.
+
+
+
+-----TUPLAS-----
+
+MÉTODOS DE TUPLAS (solo tiene dos)
+count()          Devuelve cuántas veces aparece un valor en la tupla.
+index()          Devuelve la posición de la primera aparición de un valor.
+
+FUNCIONES ÚTILES CON TUPLAS
+len()            Devuelve cuántos elementos tiene la tupla.
+max()            Devuelve el valor máximo (si los elementos son comparables).
+min()            Devuelve el valor mínimo.
+sum()            Devuelve la suma de los elementos (si son números).
+sorted()         Devuelve una lista con los elementos ordenados.
+tuple()          Convierte otro iterable (como lista o string) en una tupla.
+
+ACCESO Y DESEMPAQUE
+tup[i]           Accede al elemento en la posición i.
+a, b = tup       Desempaqueta los elementos de la tupla en variables (si tiene misma cantidad).

@@ -1,0 +1,46 @@
+----CONSTANTES----
+math.pi         3.141592653589793 (número pi)
+math.e          2.718281828459045 (base del logaritmo natural)
+math.tau        6.283185307179586 (2*pi)
+math.inf        Infinito positivo
+math.nan        Not a Number (valor no numérico)
+
+
+----FUNCIONES MATEMATICAS BASICAS----
+math.sqrt(x)             Raíz cuadrada de x
+math.exp(x)              e elevado a la x
+math.log(x, base)        Logaritmo de x en base 'base' (default base e)
+math.log10(x)            Logaritmo base 10
+math.log2(x)             Logaritmo base 2
+math.pow(x, y)           x elevado a la y (x**y)
+math.fabs(x)             Valor absoluto (float)
+math.factorial(n)        Factorial de n (n!)
+math.ceil(x)             Redondeo hacia arriba (entero)
+math.floor(x)            Redondeo hacia abajo (entero)
+
+
+----FUNCIONES TRIGONOMETRICAS----
+math.sin(x)              Seno (x en radianes)
+math.cos(x)              Coseno (x en radianes)
+math.tan(x)              Tangente (x en radianes)
+math.asin(x)             Arco seno (resultado en radianes)
+math.acos(x)             Arco coseno
+math.atan(x)             Arco tangente
+math.atan2(y, x)         Arco tangente de y/x considerando el cuadrante
+
+
+----CONVERSION DE ANGULOS----
+math.degrees(x)          Radianes a grados
+math.radians(x)          Grados a radianes
+
+
+----FUNCIONES DE REDONDEO Y COMPARACION----
+math.isclose(a, b, rel_tol=1e-9)   Comprueba si a y b son cercanos
+math.modf(x)                       Devuelve (parte decimal, parte entera)
+math.trunc(x)                      Trunca hacia 0, elimina decimales
+
+
+----OTRAS FUNCIONES----
+math.gcd(a, b)            Máximo común divisor (de enteros)
+math.lcm(a, b)            Mínimo común múltiplo (Python 3.9+)
+math.prod(iterable)       Producto de todos los elementos (Python 3.8+)

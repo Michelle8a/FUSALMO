@@ -1,7 +1,7 @@
 producto = {
-    "manzana": 35,
-    "pera": 20,
-    "uva": 10,
-    "sandia": 30,
-    "kiwi": 15
+    "manzana": 3.5,
+    "pera": 2.0,
+    "uva": 1.0,
+    "sandia": 3.0,
+    "kiwi": 1.5
 }

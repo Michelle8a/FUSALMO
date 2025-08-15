@@ -1,0 +1,55 @@
+
+Día
+%a   -> Nombre corto del día (Mon, Tue, ...)
+%A   -> Nombre completo del día (Monday, Tuesday, ...)
+%w   -> Día de la semana como número (0=Domingo, 6=Sábado)
+%d   -> Día del mes (01-31)
+%-d  -> Día del mes sin cero inicial (Linux/Mac)
+
+
+Mes
+%b   -> Nombre corto del mes (Jan, Feb, ...)
+%B   -> Nombre completo del mes (January, February, ...)
+%m   -> Mes como número (01-12)
+%-m  -> Mes sin cero inicial (Linux/Mac)
+
+
+Año
+%y   -> Año sin siglo (00-99)
+%Y   -> Año con siglo (2025)
+
+
+Hora
+%H   -> Hora en formato 24h (00-23)
+%I   -> Hora en formato 12h (01-12)
+%p   -> AM o PM
+%M   -> Minutos (00-59)
+%S   -> Segundos (00-59)
+%f   -> Microsegundos (000000-999999)
+
+
+Zona horaria
+%z   -> Desplazamiento UTC (+0000)
+%Z   -> Nombre de zona horaria (UTC, PST, ...)
+
+
+Otros
+%j   -> Día del año (001-366)
+%U   -> Semana del año (domingo primer día)
+%W   -> Semana del año (lunes primer día)
+%c   -> Representación completa local de fecha y hora
+%x   -> Representación local de la fecha
+%X   -> Representación local de la hora
+%%   -> Un símbolo %
+
+
+---------------------------------
+EJEMPLOS EN PYTHON:
+from datetime import datetime
+
+ahora = datetime.now()
+print(ahora.strftime("%Y-%m-%d %H:%M:%S"))
+# Ej: "2025-08-14 14:32:05"
+
+print(ahora.strftime("Hoy es %A, %d de %B de %Y"))
+# Ej: "Hoy es Thursday, 14 de August de 2025"

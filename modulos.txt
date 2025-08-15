@@ -1,0 +1,68 @@
+
+Manejo del sistema y entorno
+--------------------------------
+os          -> Operaciones del sistema (archivos, rutas, variables de entorno)      Ej: os.listdir('.')
+sys         -> Acceso a variables y funciones del intérprete de Python   Ej: sys.version           
+platform    -> Información del sistema operativo y hardware    Ej: platform.system()          
+shutil      -> Operaciones de alto nivel con archivos y carpetas    Ej: shutil.copy('a.txt', 'b.txt')           
+subprocess  -> Ejecutar comandos del sistema    Ej: subprocess.run(['ls'])
+               
+
+Fechas y tiempo
+------------------
+datetime    -> Fechas y horas     Ej: datetime.datetime.now()
+time        -> Medición de tiempo, pausas     Ej: time.sleep(2)
+calendar    -> Manejo de calendarios    Ej: calendar.month(2025, 8)
+
+
+Archivos y formatos
+----------------------
+json        -> Leer/escribir JSON       Ej: json.dumps({'a':1})
+csv         -> Leer/escribir CSV       Ej: csv.reader(file)
+pickle      -> Serializar objetos de Python     Ej: pickle.dump(obj, file)
+gzip / zipfile -> Comprimir y descomprimir archivos     Ej: zipfile.ZipFile('a.zip')
+
+
+Matemáticas y números
+------------------------
+math        -> Funciones matemáticas básicas    Ej: math.sqrt(16)
+statistics  -> Estadística básica       Ej: statistics.mean([1,2,3])
+random      -> Números aleatorios       Ej: random.randint(1, 10)
+decimal     -> Operaciones con alta precisión decimal      Ej: decimal.Decimal('0.1')
+fractions   -> Números racionales      Ej: Fraction(1, 3)
+
+
+Texto y expresiones regulares
+--------------------------------
+re          -> Expresiones regulares    Ej: re.findall(r'\d+', 'abc123')
+string      -> Operaciones útiles con cadenas     Ej: string.ascii_letters
+textwrap    -> Ajuste de texto          Ej: textwrap.fill(text, 50)
+
+
+Internet y redes
+-------------------
+urllib      -> Peticiones HTTP y manejo de URLs     Ej: urllib.request.urlopen(url)
+http        -> Servidores y clientes HTTP       Ej: http.server
+socket      -> Conexiones de bajo nivel         Ej: socket.socket()
+
+
+Depuración y pruebas
+-----------------------
+logging     -> Registro de eventos y errores      Ej: logging.info("Mensaje")
+traceback   -> Trazas de errores        Ej: traceback.print_exc()
+unittest    -> Pruebas unitarias        Ej: unittest.TestCase
+doctest     -> Pruebas en docstrings    Ej: doctest.testmod()
+
+
+Utilidades varias
+--------------------
+functools   -> Funciones de orden superior      Ej: functools.lru_cache
+itertools   -> Iteradores avanzados         Ej: itertools.product('AB', repeat=2)
+collections -> Tipos de datos avanzados (deque, Counter, etc.)      Ej: collections.Counter()
+uuid        -> Generar identificadores únicos       Ej: uuid.uuid4()
+hashlib     -> Hash de datos (MD5, SHA)         Ej: hashlib.sha256(b"hola").hexdigest()
+
+
+-------------------------------------
+Para ver todos los módulos:
+help('modules')

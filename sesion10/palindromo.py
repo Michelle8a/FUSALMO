@@ -5,7 +5,9 @@ longitud = len(palabra)
 
 for i in range(0, longitud):
 
-    i_inverso = longitud - 1 - i
+    indice_final = longitud - 1
+
+    i_inverso = indice_final - i
     
     derecho = palabra[i]
     reversa =  palabra[i_inverso]

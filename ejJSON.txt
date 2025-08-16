@@ -1,0 +1,60 @@
+JSON Y FILE HANDLING - CHEAT SHEET
+----------------------------------
+
+JSON (import json)
+----------------------
+# Convertir de Python a JSON (serializar)
+import json
+
+data = {"nombre": "Ana", "edad": 25}
+
+json_str = json.dumps(data)        # Convertir a string JSON
+json_bytes = json.dumps(data).encode('utf-8')  # JSON en bytes
+
+# Convertir de JSON a Python (deserializar)
+data2 = json.loads(json_str)       # De string JSON a dict
+
+# Leer y escribir JSON en archivos
+with open("data.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=4)  # Guardar dict en archivo
+
+with open("data.json", "r", encoding="utf-8") as f:
+    data_loaded = json.load(f)      # Leer dict desde archivo
+
+
+
+Manejo de archivos (File Handling)
+----------------------------------
+# Abrir archivos
+f = open("archivo.txt", "r")    # Modo lectura
+f = open("archivo.txt", "w")    # Modo escritura (sobrescribe)
+f = open("archivo.txt", "a")    # Modo añadir (append)
+f = open("archivo.txt", "r+")   # Leer y escribir
+
+# Leer contenido
+contenido = f.read()            # Todo el contenido
+lineas = f.readlines()          # Lista de líneas
+linea = f.readline()            # Una línea
+
+# Escribir contenido
+f.write("Hola mundo\n")
+f.writelines(["Linea1\n", "Linea2\n"])
+
+# Cerrar archivo
+f.close()
+
+# Usando 'with' (mejor práctica)
+with open("archivo.txt", "r") as f:
+    for linea in f:
+        print(linea.strip())
+
+# Combinando JSON + File Handling
+import json
+
+data = {"ciudad": "Madrid", "poblacion": 3300000}
+with open("ciudad.json", "w") as f:
+    json.dump(data, f, indent=2)
+
+with open("ciudad.json", "r") as f:
+    info = json.load(f)
+print(info["ciudad"])  # Madrid

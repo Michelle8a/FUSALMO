@@ -12,3 +12,7 @@ texto2 = "Hola mundo"
 y = re.search(" ", texto2)
 print(y)
 
+
+#funcion sub
+z = re.sub(" ", "-", texto2)
+print(z)

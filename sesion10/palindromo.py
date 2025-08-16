@@ -27,6 +27,6 @@ for i in range(len(palabra)):
         break
 
 if es_palindromo:
-    print("Sí es palíndromo")
+    print("Si es palindromo")
 else:
-    print("No es palíndromo")
+    print("No es palindromo")

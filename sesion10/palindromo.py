@@ -15,3 +15,18 @@ for i in range(0, longitud):
     print(derecho, "---", reversa)
 
 
+#------
+
+palabra = input("Escriba una palabra: ")
+es_palindromo = True 
+
+for i in range(len(palabra)):
+   
+    if palabra[i] != palabra[len(palabra) - 1 - i]:
+        es_palindromo = False
+        break
+
+if es_palindromo:
+    print("Sí es palíndromo")
+else:
+    print("No es palíndromo")

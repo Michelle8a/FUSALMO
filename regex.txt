@@ -1,0 +1,62 @@
+EXPRESIONES REGULARES
+-----------------------------------
+
+Básicos
+.       -> Cualquier carácter (excepto salto de línea)
+^       -> Inicio de la cadena
+$       -> Fin de la cadena
+\       -> Escapar un carácter especial (Ej: \. busca un punto literal)
+
+
+Cuantificadores
+*       -> 0 o más repeticiones
++       -> 1 o más repeticiones
+?       -> 0 o 1 repetición
+{n}     -> Exactamente n repeticiones
+{n,}    -> n o más repeticiones
+{n,m}   -> Entre n y m repeticiones
+
+
+Clases de caracteres
+\d      -> Cualquier digito [0-9]
+\D      -> No dígito
+\w      -> Carácter de palabra [a-zA-Z0-9_]
+\W      -> No carácter de palabra
+\s      -> Espacio en blanco (espacio, tab, salto de línea)
+\S      -> No espacio en blanco
+[abc]   -> Uno de los caracteres a, b o c
+[^abc]  -> Cualquier carácter excepto a, b o c
+[a-z]   -> Rango: letras minúsculas
+[A-Z]   -> Rango: letras mayúsculas
+[0-9]   -> Rango: números
+
+
+Grupos y alternancia
+(ab)    -> Grupo
+a|b     -> a o b
+(?:ab)  -> Grupo sin captura
+(?P<nombre>...) -> Grupo con nombre
+
+Anclas
+\b      -> Límite de palabra
+\B      -> No límite de palabra
+(?=...) -> Lookahead positivo (debe seguirle ...)
+(?!...) -> Lookahead negativo (NO debe seguirle ...)
+(?<=...) -> Lookbehind positivo (debe estar precedido por ...)
+(?<!...) -> Lookbehind negativo (NO debe estar precedido por ...)
+
+
+Ejemplos prácticos
+\d+                -> Uno o más dígitos
+^[A-Z][a-z]+$      -> Empieza con mayúscula y luego minúsculas
+^\d{4}-\d{2}-\d{2}$-> Fecha YYYY-MM-DD
+\w+@\w+\.\w+       -> Email básico
+https?://\S+       -> URL que empieza con http o https
+
+-----------------------------------
+EN PYTHON:
+
+import re
+re.findall(r"\d+", "Tengo 2 gatos y 14 peces.") # ['2', '14']
+re.match(r"^\w+@\w+\.\w+$", "correo@ejemplo.com")
+

@@ -1,9 +1,11 @@
 
 palabra = "arenera"
 
-for i in range(0, len(palabra)):
+longitud = len(palabra)
 
-    i_inverso = len(palabra) - 1 - i
+for i in range(0, longitud):
+
+    i_inverso = longitud - 1 - i
     
     derecho = palabra[i]
     reversa =  palabra[i_inverso]

@@ -12,6 +12,7 @@ else:
     datos = {}
 
 while True:
+
     os.system('cls')
     print("--- MENU ---")
     print("1. Ver productos")
@@ -24,7 +25,7 @@ while True:
 
     if opcion == 1:
 
-        print("\n----PRODUCTOS----")
+        print("\n---- PRODUCTOS ----")
 
         for key, value in datos.items():
             print(f"{key}: {value}")
@@ -46,7 +47,7 @@ while True:
     elif opcion == 4:
 
         producto = input("Escriba el producto a modificar: ")
-        
+
         nuevo_producto = input("Escriba el nuevo producto: ")
         nuevo_precio = float(input("Escriba el nuevo precio: "))
         

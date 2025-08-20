@@ -17,7 +17,7 @@ class videoGame:
         self.genero = genero
 
     def get_genero(self, genero):
-        self.genero = genero
+        return self.genero
 
 
 juegoSteam = videoGame("PC", "Zombies")

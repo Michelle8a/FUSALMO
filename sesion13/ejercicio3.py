@@ -1,12 +1,14 @@
 import os
 
+comandos = []
+
 while True:
 
-    os.system('cls')
     print("Menu")
-    print("1. Agregar")
-    print("2. Eliminar")
-    print("3. Salir")
+    print("1. Agregar comando")
+    print("2. Ver comandos")
+    print("3. Ejecutar comando")
+
 
     opcion = 0
     
@@ -19,12 +21,21 @@ while True:
             print("La opcion tiene que ser un numero entero\n")
 
     if opcion == 1:
-        pass
+        comando = print("Escriba un comando: ")
+        comandos.append(comando)
+
 
     elif opcion == 2:
-        pass
+        for comando in comandos:
+            print(comando)
+    
 
     elif opcion == 3:
+        for comando in comandos:
+            print(comando)
+
+
+    elif opcion == 4:
         print("Saliendo")
         break
 
@@ -33,5 +44,4 @@ while True:
     
     input("Presiona Enter para continuar")
 
-
-
+    

@@ -1,0 +1,10 @@
+Informacion
+
+User: Data1
+Contraseña: SuperContraseña
+
+User: Data2
+Contraseña: SuperContra
+
+User: Data3
+Contraseña: Super

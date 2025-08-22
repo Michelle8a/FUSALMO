@@ -1,0 +1,1 @@
+Nombre: Karina, Edad: 34, Sexo: Mujer, Nota Media: 3.0

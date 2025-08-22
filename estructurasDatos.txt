@@ -37,10 +37,10 @@ popitem()        Elimina y devuelve el último par agregado.
 clear()          Elimina todos los elementos del diccionario.
 
 CONSULTA DE DATOS
+items()          Devuelve una vista con todos los pares (clave, valor).
 get()            Devuelve el valor de una clave. Si no existe, devuelve None (o el valor por defecto que indiques).
 keys()           Devuelve una vista con todas las claves.
 values()         Devuelve una vista con todos los valores.
-items()          Devuelve una vista con todos los pares (clave, valor).
 copy()           Crea una copia del diccionario.
 
 CREACIÓN

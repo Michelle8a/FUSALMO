@@ -1,0 +1,51 @@
+
+<style>
+
+    input{
+        padding: 5px;
+        margin: 5px;
+        border: 2px solid black;
+
+    }
+
+    input:focus{
+        border: 2px solid red;
+
+    }
+
+    .elemento{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: miAnimacion;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes miAnimacion{
+        0%{
+            
+            opacity: 1;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{   
+            opacity: 1;
+        }
+    }
+</style>
+
+
+
+<div>
+    <form>
+        <input type="text" placeholder="username">
+        <input type="email" placeholder="email">
+        <input type="password" placeholder="password">
+        <input type="submit">
+    </form>
+
+    <div class="elemento">
+    </div>
+</div>

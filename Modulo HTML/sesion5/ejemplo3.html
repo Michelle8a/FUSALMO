@@ -1,0 +1,57 @@
+
+<style>
+
+    .elemento{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position:absolute;
+        top: 0px;
+        left: 0px;
+
+        border-radius: 50px;
+
+        animation-name: miAnimacion;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes miAnimacion{
+        0%{
+            left: 0px;
+            top: 0px;
+        }
+        25%{
+            left: 98%;
+            top: 0px;
+        }
+        50%{
+            left: 98%;
+            top: 95vh
+        }
+        75%{
+            left: 0px;
+            top: 95vh
+        }
+        100%{   
+            left: 0px;
+            top: 0px;
+        }
+    }
+
+    .cuadro{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position:absolute;
+        top: 50vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50px;
+    }
+
+</style>
+
+<div class="elemento"> </div>
+
+<div class="cuadro"> </div>

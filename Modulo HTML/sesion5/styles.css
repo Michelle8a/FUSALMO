@@ -1,0 +1,29 @@
+/*Estilos para el encabezado*/
+
+h1{ /* Estilos para los elementos <h1> */
+    color: blue;
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+/*Estilos para el parrafo*/
+
+p{
+    color: darkgrey;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+
+.container{
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding: 10px; /*Espacio interno*/
+}
+
+.texto{
+    font-size: 18px;
+    color: red; /*Anula el color de texto azul heredado*/
+
+}

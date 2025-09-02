@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Cambio de Color de Fondo</h1>
+    <input type="color" id="colorInput">
+    <button id="cambiarColorBtn">Cambiar Color de Fondo</button>
+
+    <script>
+
+        // Obtener elementos del DOM
+        const colorInput = document.getElementById("colorInput");
+        const cambiarColorBtn = document.getElementById("cambiarColorBtn");
+
+        // Función para cambiar el color de fondo
+        function cambiarColorFondo() {
+            const colorSeleccionado = colorInput.value;
+            document.body.style.backgroundColor = colorSeleccionado;
+        }
+
+        // Agregar evento al botón
+        cambiarColorBtn.addEventListener("click", cambiarColorFondo);
+
+    </script>
+
+</body>
+
+</html>

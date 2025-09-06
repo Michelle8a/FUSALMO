@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <button>Agregar elementos</button>
+    <a>Limpiar div</a>
+
+    <div id="contenedor"></div>
+
+    <script>
+        $(document).ready(function() {
+            
+            $("button").click(function(){
+                $("#contenedor").append("</br> Hola mundo");
+            })
+
+            $("a").click(function(){
+                $("#contenedor").empty();
+            })
+            
+        })
+    </script>
+    
+</body>
+</html>

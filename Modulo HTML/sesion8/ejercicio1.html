@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de creacion de elementos</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h1>Creacion de elementos con JQuery</h1>
+
+        <form>
+            <div class="form-group">
+                <label for="claseElemento">Clase del Elemento</label>
+                <input type="text" class="form-control" id="claseElemento">
+            </div>
+
+            <div class="form-group">
+                <label for="contenidoElemento">Contenido del Elemento</label>
+                <input type="text" class="form-control" id="contenidoElemento">
+            </div>
+
+            <button type="button" class="btn btn-primary" id="crearElemento">Crear Elemento</button>
+        </form>
+
+        <div id="contenedorElementos"></div>
+        <p id="contador">Elementos Creados: 0</p>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            var contadorElementos = 0;
+
+            $("#crearElemento").click(function () {
+                var clase = $("#claseElemento").val();
+                var contenido = $("#contenidoElemento").val();
+
+                if (clase && contenido) {
+                    contadorElementos++;
+
+                    var nuevoElemento = $('<div>', {
+                        class: 'elemento' + clase,
+                        text: contenido
+                    });
+
+                    $("#contenedorElementos").append(nuevoElemento);
+
+                    $("#contador").text("Elementos Creados: " + contadorElementos);
+                }
+            });
+        });
+    </script>
+
+
+<style>
+    .elemento{
+        margin: 10px;
+        padding: 10px;
+        border : 1px solid black;
+        background-color: lightblue;
+    }
+</style>
+
+
+
+</body>
+
+</html>
